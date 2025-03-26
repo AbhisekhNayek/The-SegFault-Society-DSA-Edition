@@ -75,22 +75,168 @@ Each category includes:
 
 ---
 
-## **📌 1. Arrays**
+### **📂 1. Arrays – Problem Breakdown**  
 
-| SL  | Problem Name                                      | Difficulty |
-|----|--------------------------------------------------|------------|
-| 1  | Second Largest Element in an Array              | Easy       |
-| 2  | Reverse an Array                                | Easy       |
-| 3  | Move All Zeros to End                           | Easy       |
-| 4  | Buy & Sell Stock (Single Transaction)          | Easy       |
-| 5  | Rotate an Array                                | Medium     |
-| 6  | Majority Element                               | Medium     |
-| 7  | Next Permutation                               | Medium     |
-| 8  | Buy & Sell Stock (Multiple Transactions)      | Medium     |
-| 9  | Minimize the Heights II                        | Medium     |
-| 10 | Kadane’s Algorithm – Maximum Subarray Sum     | Medium     |
-| 11 | Maximum Product Subarray                      | Medium     |
-| 12 | Find Smallest Positive Missing Number         | Medium     |
-| 13 | Maximum Circular Subarray Sum                 | Hard       |
-| 14 | Trapping Rain Water                           | Hard       |
-| 15 | Merge Intervals                               | Hard       |
+<details>
+  <summary>1️⃣ Second Largest Element in an Array (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Sort the array in descending order and return the second element.  
+- **Time Complexity:** `O(N log N)`  
+- **Space Complexity:** `O(1)`
+
+**🔹 Better Approach**  
+- Traverse twice:  
+  - First to find the max element  
+  - Second to find the second max  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach**  
+- Traverse once, tracking `maxElement` and `secondMax`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`  
+
+</details>  
+
+---
+
+<details>
+  <summary>2️⃣ Reverse an Array (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Use an extra array to copy elements in reverse order.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Two Pointers)**  
+- Swap elements from start & end until they meet.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`  
+
+</details>  
+
+---
+
+<details>
+  <summary>3️⃣ Move All Zeros to End (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Create a new array, add non-zero elements first, then zeros.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Two Pointers)**  
+- One pointer tracks **non-zero positions**, another iterates.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`  
+
+</details>  
+
+---
+
+<details>
+  <summary>4️⃣ Buy & Sell Stock (Single Transaction) (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Try all possible `(buy, sell)` pairs and get max profit.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach**  
+- Track **minimum price so far** and **max profit** in one pass.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+---
+
+<details>
+  <summary>5️⃣ Rotate an Array (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Use an extra array and shift elements.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Reverse Method)**  
+1. Reverse the whole array.  
+2. Reverse the first `k` elements.  
+3. Reverse the rest of the array.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+---
+
+<details>
+  <summary>6️⃣ Majority Element (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Count frequency of each element.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+**🔹 Better Approach**  
+- Use a HashMap.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Boyer-Moore Voting Algorithm)**  
+- Track **potential majority element** and its count.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+---
+
+<details>
+  <summary>7️⃣ Kadane's Algorithm – Maximum Subarray Sum (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Compute sum for all subarrays.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach (Kadane’s Algorithm)**  
+- Track `currentSum` and `maxSum`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+---
+
+<details>
+  <summary>8️⃣ Maximum Product Subarray (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Compute product of all subarrays.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach**  
+- Track `maxProduct` and `minProduct` dynamically.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+---
+
+<details>
+  <summary>9️⃣ Longest Consecutive Sequence (Hard)</summary>  
+
+**🔹 Brute Force Approach**  
+- Sort and traverse to count streaks.  
+- **Time Complexity:** `O(N log N)`
+
+**🔹 Optimal Approach (Using Set)**  
+- Use a HashSet for fast lookup.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+---
+
+<details>
+  <summary>🔟 Subarray Sum Equals K (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Try all subarrays and check sum.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach (Prefix Sum + HashMap)**  
+- Store cumulative sums and check for `(currentSum - k)`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+---
+
