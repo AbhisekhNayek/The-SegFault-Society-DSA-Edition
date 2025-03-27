@@ -75,7 +75,7 @@ Each category includes:
 
 ---
 
-### **📂 1. Arrays – Problem Breakdown**  
+## **📂 1. Arrays**  
 
 <details>
   <summary>1️⃣ Second Largest Element in an Array (Easy)</summary>  
@@ -239,4 +239,162 @@ Each category includes:
 </details>  
 
 ---
+
+## **📂 2. Strings**  
+---
+<details>
+  <summary>1️⃣ Anagram (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Sort both strings and compare.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (HashMap / Frequency Array)**  
+- Count character frequencies and compare.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>2️⃣ Non-Repeating Character (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Check each character’s occurrence in the string.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach (HashMap / Frequency Array)**  
+- Use a frequency array to track character occurrences.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>3️⃣ String Rotation of Each Other (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Generate all rotations and compare.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach (Concatenation Trick)**  
+- Check if `s1` is a substring of `s2 + s2`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>4️⃣ Reverse a String (Easy)</summary>  
+
+**🔹 Two-Pointer Approach**  
+- Swap characters from start to end.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>5️⃣ Palindrome Check (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Reverse and compare.  
+- **Time Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Two Pointers)**  
+- Compare characters from both ends.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>6️⃣ Add Two Binary Strings (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Convert to decimal, add, and convert back.  
+- **Time Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Bit Manipulation)**  
+- Traverse from right, sum bits, and carry forward.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>7️⃣ Implement ATOI (Medium)</summary>  
+
+**🔹 Steps to Implement:**  
+1. Ignore leading whitespaces.  
+2. Handle `+` / `-` sign.  
+3. Convert valid digits.  
+4. Handle integer overflow.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>8️⃣ Remove All Occurrences of a Substring (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Replace occurrences iteratively.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach (KMP Algorithm)**  
+- Use KMP for efficient substring search.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>9️⃣ Reverse Words in a String (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Split, reverse, and join.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (In-Place Reversal)**  
+- Reverse entire string, then words.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>🔟 String Compression (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Count characters manually.  
+- **Time Complexity:** `O(N²)`
+
+**🔹 Optimal Approach (Two Pointers)**  
+- Use a result string and track counts.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>1️⃣1️⃣ KMP Pattern Matching (Hard)</summary>  
+
+**🔹 Approach (Prefix Function + KMP Algorithm)**  
+- Precompute prefix function for pattern.  
+- **Time Complexity:** `O(N + M)`, **Space Complexity:** `O(M)`
+
+</details>  
+
+<details>
+  <summary>1️⃣2️⃣ Min Chars to Add for Palindrome (Hard)</summary>  
+
+**🔹 Optimal Approach (KMP + Reverse String)**  
+- Append reverse and compute LPS array.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>1️⃣3️⃣ Permutation in String (Hard)</summary>  
+
+**🔹 Brute Force Approach**  
+- Generate all permutations and check.  
+- **Time Complexity:** `O(N!)`
+
+**🔹 Optimal Approach (Sliding Window + Frequency Array)**  
+- Use character frequency comparison within a sliding window.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
 
