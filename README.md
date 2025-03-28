@@ -400,7 +400,7 @@ Each category includes:
 </details>  
 
 ---
-## **📂 2. Sorting**
+## **📂 3. Sorting**
 ---
 
 
@@ -526,3 +526,159 @@ Each category includes:
 - **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
 
 </details>  
+
+---
+
+## **📂 4. Searching** 
+---
+
+<details>
+  <summary>1️⃣ Find Peak Element (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Traverse the array and check neighbors.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search)**  
+- Apply binary search to find the peak efficiently.  
+- **Time Complexity:** `O(log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>2️⃣ Number of Occurrences (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Traverse and count occurrences manually.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search)**  
+- Find the first and last occurrence using binary search.  
+- **Time Complexity:** `O(log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>3️⃣ Sorted and Rotated Minimum (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Traverse the array to find the minimum element.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search)**  
+- Use binary search to locate the pivot (minimum element).  
+- **Time Complexity:** `O(log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>4️⃣ Search in Rotated Sorted Array (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Perform linear search.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+**🔹 Better Approach (Binary Search with Extra Checks)**  
+- First, find the rotation point, then apply binary search.  
+- **Time Complexity:** `O(log N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Modified Binary Search)**  
+- Identify the sorted half and perform binary search in the correct part.  
+- **Time Complexity:** `O(log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>5️⃣ K-th Element of Two Arrays (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Merge both arrays and return the k-th element.  
+- **Time Complexity:** `O(N + M)`, **Space Complexity:** `O(N + M)`
+
+**🔹 Better Approach (Two-Pointer Merge)**  
+- Merge up to the k-th element without full merging.  
+- **Time Complexity:** `O(K)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search on Smaller Array)**  
+- Partition the two arrays to find the k-th element efficiently.  
+- **Time Complexity:** `O(log min(N, M))`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>6️⃣ K-th Missing Positive Number in a Sorted Array (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Traverse and count missing numbers manually.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search)**  
+- Use binary search to directly locate the k-th missing number.  
+- **Time Complexity:** `O(log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>7️⃣ Allocate Minimum Pages (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Try all possible distributions.  
+- **Time Complexity:** `O(2^N)`, **Space Complexity:** `O(1)`
+
+**🔹 Better Approach (Prefix Sum + Recursion)**  
+- Use recursion with memoization.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Binary Search on Answer)**  
+- Apply binary search on the max pages allocated.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>8️⃣ Aggressive Cows (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Try placing cows at every possible distance.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search on Minimum Distance)**  
+- Use binary search to maximize the minimum distance.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>9️⃣ Painters Partition (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Generate all possible partitions and find the one with the least max time.  
+- **Time Complexity:** `O(2^N)`, **Space Complexity:** `O(1)`
+
+**🔹 Better Approach (Dynamic Programming)**  
+- Use DP to store results of previous partitions.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Binary Search on Answer)**  
+- Use binary search to find the minimum maximum time required.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>🔟 Median of Two Sorted Arrays (Hard)</summary>  
+
+**🔹 Brute Force Approach**  
+- Merge both arrays and find the median.  
+- **Time Complexity:** `O(N + M)`, **Space Complexity:** `O(N + M)`
+
+**🔹 Better Approach (Two Pointers)**  
+- Merge until the median is found without storing extra space.  
+- **Time Complexity:** `O((N + M) / 2)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search on Smaller Array)**  
+- Use binary search to partition both arrays correctly.  
+- **Time Complexity:** `O(log min(N, M))`, **Space Complexity:** `O(1)`
+
+</details>  
+
