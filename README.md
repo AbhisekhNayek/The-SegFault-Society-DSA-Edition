@@ -75,7 +75,8 @@ Each category includes:
 
 ---
 
-## **📂 1. Arrays**  
+## **📂 1. Arrays** 
+---
 
 <details>
   <summary>1️⃣ Second Largest Element in an Array (Easy)</summary>  
@@ -97,7 +98,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>2️⃣ Reverse an Array (Easy)</summary>  
@@ -112,7 +113,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>3️⃣ Move All Zeros to End (Easy)</summary>  
@@ -127,7 +128,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>4️⃣ Buy & Sell Stock (Single Transaction) (Easy)</summary>  
@@ -142,7 +143,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>5️⃣ Rotate an Array (Medium)</summary>  
@@ -159,7 +160,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>6️⃣ Majority Element (Medium)</summary>  
@@ -178,7 +179,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>7️⃣ Kadane's Algorithm – Maximum Subarray Sum (Medium)</summary>  
@@ -193,7 +194,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>8️⃣ Maximum Product Subarray (Medium)</summary>  
@@ -208,7 +209,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>9️⃣ Longest Consecutive Sequence (Hard)</summary>  
@@ -223,7 +224,7 @@ Each category includes:
 
 </details>  
 
----
+
 
 <details>
   <summary>🔟 Subarray Sum Equals K (Medium)</summary>  
@@ -398,3 +399,130 @@ Each category includes:
 
 </details>  
 
+---
+## **📂 2. Sorting**
+---
+
+
+<details>
+  <summary>1️⃣ Bubble Sort (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Repeatedly swap adjacent elements if they are in the wrong order.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach**  
+- Optimized by detecting early sorted arrays.  
+- **Time Complexity:** `O(N^2)` (Worst), `O(N)` (Best if already sorted), **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>2️⃣ Selection Sort (Easy)</summary>  
+
+**🔹 Approach**  
+- Find the minimum element and swap it with the current index.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>3️⃣ Insertion Sort (Easy)</summary>  
+
+**🔹 Approach**  
+- Build a sorted array one element at a time by inserting elements at the correct position.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>4️⃣ Quick Sort (Easy)</summary>  
+
+**🔹 Approach (Divide & Conquer)**  
+- Pick a pivot, partition the array, and sort recursively.  
+- **Time Complexity:** `O(N log N)` (Average), `O(N^2)` (Worst in unbalanced partitioning), **Space Complexity:** `O(log N)`
+
+</details>  
+
+<details>
+  <summary>5️⃣ Sort 0’s, 1’s, and 2’s (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Sort the array normally (like merge/quick sort).  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Dutch National Flag Algorithm)**  
+- Use three pointers (low, mid, high) to place elements in correct positions.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>6️⃣ Find H-Index of a Research Paper (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Sort citations and check conditions manually.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Counting Sort / Bucket Sort)**  
+- Use frequency counting to determine H-Index efficiently.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>7️⃣ Count Inversion (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Count pairs `(i, j)` where `i < j` and `arr[i] > arr[j]`.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Merge Sort Modification)**  
+- Modify merge sort to count inversions while merging.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>8️⃣ Merge Overlapping Intervals (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Compare all intervals and merge manually.  
+- **Time Complexity:** `O(N^2)`, **Space Complexity:** `O(N)`
+
+**🔹 Optimal Approach (Sorting + Merging)**  
+- Sort intervals, then iterate and merge overlapping ones.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>9️⃣ Insert New Intervals (Medium)</summary>  
+
+**🔹 Approach**  
+- Find correct insertion position and merge accordingly.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>🔟 Non-Overlapping Intervals (Medium)</summary>  
+
+**🔹 Approach (Greedy Algorithm)**  
+- Sort by end time, then greedily remove intervals causing overlap.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>1️⃣1️⃣ Merge Without Extra Space (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Merge and sort the entire combined array.  
+- **Time Complexity:** `O((N+M) log (N+M))`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Gap Method)**  
+- Use a shrinking gap to rearrange elements in place.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+</details>  
