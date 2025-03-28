@@ -682,3 +682,141 @@ Each category includes:
 
 </details>  
 
+---
+
+## **📂 5. Matrix** 
+--- 
+
+<details>
+  <summary>1️⃣ Search in a Row-Wise Sorted Matrix (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Perform a linear search on all elements.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Binary Search in Each Row)**  
+- Apply binary search in each row separately.  
+- **Time Complexity:** `O(N log M)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>2️⃣ Search in a Row-Column Sorted Matrix (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Scan the entire matrix for the target.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Start from Top-Right or Bottom-Left)**  
+- Move left if the current element is larger, move down if smaller.  
+- **Time Complexity:** `O(N + M)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>3️⃣ Rotate Matrix by 90 Degrees (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Create a new matrix and map elements accordingly.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(N*M)`
+
+**🔹 Optimal Approach (Transpose + Reverse Rows)**  
+- First, transpose the matrix, then reverse each row.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>4️⃣ Search in a Sorted Matrix (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Perform a simple linear search.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+**🔹 Better Approach (Binary Search in 1D View)**  
+- Treat the matrix as a 1D sorted array and apply binary search.  
+- **Time Complexity:** `O(log(N*M))`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>5️⃣ Set Matrix Zeroes (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Create a copy of the matrix and update it based on zero positions.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(N*M)`
+
+**🔹 Better Approach (Row and Column Hashing)**  
+- Use separate arrays to mark which rows/columns should be zero.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(N+M)`
+
+**🔹 Optimal Approach (Modify Matrix in Place)**  
+- Use the first row and first column as markers.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>6️⃣ Print Spiral Matrix (Hard)</summary>  
+
+**🔹 Brute Force Approach**  
+- Use multiple loops to simulate the spiral traversal.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(N*M)` (if storing the result)
+
+**🔹 Optimal Approach (Layer-wise Traversal)**  
+- Maintain boundaries (top, bottom, left, right) and traverse layer by layer.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>7️⃣ Find the Median in a Row-Wise Sorted Matrix (Hard)</summary>  
+
+**🔹 Brute Force Approach**  
+- Flatten the matrix and sort it to find the median.  
+- **Time Complexity:** `O(N*M log(N*M))`, **Space Complexity:** `O(N*M)`
+
+**🔹 Optimal Approach (Binary Search on Median Value)**  
+- Use binary search on the value range to determine the median position.  
+- **Time Complexity:** `O(N log Max-Min)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>8️⃣ Kth Smallest Element in a Sorted Matrix (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Flatten and sort the matrix, then return the k-th smallest element.  
+- **Time Complexity:** `O(N*M log(N*M))`, **Space Complexity:** `O(N*M)`
+
+**🔹 Optimal Approach (Min Heap / Binary Search)**  
+- Use a min heap or binary search on values to efficiently find the k-th smallest.  
+- **Time Complexity:** `O(K log N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>
+  <summary>9️⃣ Boolean Matrix Problem (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Use an extra matrix to track changes and update the original.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(N*M)`
+
+**🔹 Optimal Approach (Row and Column Markers)**  
+- Use the first row and column as flags for modification.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>
+  <summary>🔟 Maximum Rectangle of 1s in a Binary Matrix (Hard)</summary>  
+
+**🔹 Brute Force Approach**  
+- Check all possible submatrices to find the largest rectangle of 1s.  
+- **Time Complexity:** `O(N^3)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Histogram + Stack)**  
+- Treat each row as a histogram and apply the **Largest Rectangle in Histogram** approach.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(M)`
+
+</details>  
