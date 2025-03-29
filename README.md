@@ -820,3 +820,140 @@ Each category includes:
 - **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(M)`
 
 </details>  
+
+Here's how your **Hashing** section will look in your GitHub repository:  
+
+---
+
+## **📂 6. Hashing**  
+---  
+
+<details>  
+  <summary>1️⃣ Two Sum - Pair with Given Sum (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Iterate through all pairs and check if their sum equals the target.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Using HashMap)**  
+- Use a HashMap to store visited elements and find the complement in `O(1)`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>  
+  <summary>2️⃣ Three Sum (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Check all triplets and see if their sum equals zero.  
+- **Time Complexity:** `O(N³)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Sorting + Two Pointers)**  
+- Sort the array and use two pointers to find pairs.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>  
+  <summary>3️⃣ Four Sum (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Iterate through all quadruplets and check for the target sum.  
+- **Time Complexity:** `O(N⁴)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Sorting + Two Pointers)**  
+- Sort the array, fix two elements, and use two pointers to find remaining pairs.  
+- **Time Complexity:** `O(N³)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>  
+  <summary>4️⃣ Find Missing & Repeating Value (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Count occurrences using two loops.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Using HashMap / Math Formula)**  
+- Use frequency hash map OR solve using sum and sum of squares formula.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N) / O(1)`
+
+</details>  
+
+<details>  
+  <summary>5️⃣ Union of Arrays with Duplicates (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Merge both arrays and remove duplicates manually.  
+- **Time Complexity:** `O(N+M)`, **Space Complexity:** `O(N+M)`
+
+**🔹 Optimal Approach (Using HashSet)**  
+- Store elements in a HashSet to remove duplicates efficiently.  
+- **Time Complexity:** `O(N+M)`, **Space Complexity:** `O(N+M)`
+
+</details>  
+
+<details>  
+  <summary>6️⃣ Intersection of Two Arrays with Duplicate Elements (Easy)</summary>  
+
+**🔹 Brute Force Approach**  
+- Iterate through both arrays and find common elements manually.  
+- **Time Complexity:** `O(N*M)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Using HashMap)**  
+- Use a HashMap to store frequencies and find common elements.  
+- **Time Complexity:** `O(N+M)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>  
+  <summary>7️⃣ Find All Triplets with Zero Sum (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Use three nested loops to find all triplets summing to zero.  
+- **Time Complexity:** `O(N³)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Sorting + Two Pointers)**  
+- Sort the array and use two pointers for each fixed element.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+</details>  
+
+<details>  
+  <summary>8️⃣ Longest Consecutive Subsequence (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Sort the array and find longest consecutive sequence.  
+- **Time Complexity:** `O(N log N)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Using HashSet)**  
+- Store elements in a HashSet and check for sequence starts.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>  
+  <summary>9️⃣ Subarrays with Sum K (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Generate all subarrays and check their sum.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Using Prefix Sum + HashMap)**  
+- Maintain a prefix sum and count occurrences of `(prefix_sum - k)`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
+
+<details>  
+  <summary>🔟 Count Subarrays with Given XOR (Medium)</summary>  
+
+**🔹 Brute Force Approach**  
+- Generate all subarrays and compute XOR values.  
+- **Time Complexity:** `O(N²)`, **Space Complexity:** `O(1)`
+
+**🔹 Optimal Approach (Using HashMap - Prefix XOR)**  
+- Store prefix XOR counts in a HashMap and find `(prefix_XOR ^ target)`.  
+- **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
+
+</details>  
