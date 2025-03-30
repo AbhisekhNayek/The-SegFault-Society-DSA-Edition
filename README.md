@@ -957,3 +957,177 @@ Here's how your **Hashing** section will look in your GitHub repository:
 - **Time Complexity:** `O(N)`, **Space Complexity:** `O(N)`
 
 </details>  
+
+---
+
+## **📂 7. Two Pointer**  
+---  
+
+<details> <summary>1️⃣ Count Pairs Whose Sum Is Less Than Target (Easy)</summary> 🔹 **Brute Force Approach**
+Iterate through all pairs and check if their sum is less than the target.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Sort the array. Use two pointers—one at the beginning and one at the end. If the sum is less than the target, count all pairs from left to right pointer and move left pointer forward. Otherwise, move the right pointer backward.
+
+Time Complexity: O(N log N + N) ≈ O(N log N), Space Complexity: O(1)
+
+</details> <details> <summary>2️⃣ Pair With Given Sum in a Sorted Array (Easy)</summary>
+🔹 Brute Force Approach
+
+Iterate through all pairs and check if their sum equals the given sum.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Use two pointers—one at the start and one at the end. If their sum matches the target, return the indices. If the sum is too small, move the left pointer forward; if too large, move the right pointer backward.
+
+Time Complexity: O(N), Space Complexity: O(1)
+
+</details> <details> <summary>3️⃣ Sum Pair Closest to Target (Easy)</summary>
+🔹 Brute Force Approach
+
+Iterate through all pairs and track the closest sum to the target.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Sort the array and use two pointers—one at the start and one at the end. Update the closest sum based on comparison with the target.
+
+Time Complexity: O(N log N + N) ≈ O(N log N), Space Complexity: O(1)
+
+</details> <details> <summary>4️⃣ Indexes of Subarray Sum (Medium)</summary>
+🔹 Brute Force Approach
+
+Check all subarrays and find the one with the given sum.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique / Sliding Window)
+
+Use a sliding window approach to adjust the sum dynamically by moving left and right pointers.
+
+Time Complexity: O(N), Space Complexity: O(1)
+
+</details> <details> <summary>5️⃣ Count the Number of Possible Triangles (Medium)</summary>
+🔹 Brute Force Approach
+
+Check every triplet and verify if they form a valid triangle.
+
+Time Complexity: O(N³), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Sort the array. Fix one side and use two pointers to count valid triangles.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+</details> <details> <summary>6️⃣ Count All Triplets with Given Sum in Sorted Array (Medium)</summary>
+🔹 Brute Force Approach
+
+Use three nested loops to find all valid triplets.
+
+Time Complexity: O(N³), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Sort the array, fix one element, and use two pointers to find remaining two elements.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+</details> <details> <summary>7️⃣ Container With Most Water (Medium)</summary>
+🔹 Brute Force Approach
+
+Check every pair and calculate the area.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Use two pointers—one at the start and one at the end—to maximize the water stored while adjusting the shorter height.
+
+Time Complexity: O(N), Space Complexity: O(1)
+
+</details> <details> <summary>8️⃣ Trapping Rain Water (Medium)</summary>
+🔹 Brute Force Approach
+
+Check the max height to the left and right for each index.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Two Pointer Technique)
+
+Use two pointers to track left and right boundaries, calculating trapped water dynamically.
+
+Time Complexity: O(N), Space Complexity: O(1)
+
+</details> <details> <summary>9️⃣ Single Element in Sorted Array (Medium)</summary>
+🔹 Brute Force Approach
+
+Iterate through the array and check occurrences.
+
+Time Complexity: O(N), Space Complexity: O(1)
+
+🔹 Optimal Approach (Binary Search + Two Pointer Idea)
+
+Use binary search and two-pointer logic to find the single element.
+
+Time Complexity: O(log N), Space Complexity: O(1)
+
+</details> <details> <summary>🔟 Search in Sorted Rotated Array (Hard)</summary>
+🔹 Brute Force Approach
+
+Linear search through the entire array.
+
+Time Complexity: O(N), Space Complexity: O(1)
+
+🔹 Optimal Approach (Binary Search + Two Pointer Idea)
+
+Modify binary search to handle rotation cases.
+
+Time Complexity: O(log N), Space Complexity: O(1)
+
+</details> <details> <summary>1️⃣1️⃣ Book Allocation (Hard)</summary>
+🔹 Brute Force Approach
+
+Try all possible allocations.
+
+Time Complexity: O(N!), Space Complexity: O(1)
+
+🔹 Optimal Approach (Binary Search + Two Pointer Idea)
+
+Use binary search on answer space to minimize max pages allocated.
+
+Time Complexity: O(N log N), Space Complexity: O(1)
+
+</details> <details> <summary>1️⃣2️⃣ Painter’s Partition (Hard)</summary>
+🔹 Brute Force Approach
+
+Check all ways to divide boards among painters.
+
+Time Complexity: O(N!), Space Complexity: O(1)
+
+🔹 Optimal Approach (Binary Search + Two Pointer Idea)
+
+Use binary search on max partition size.
+
+Time Complexity: O(N log N), Space Complexity: O(1)
+
+</details> <details> <summary>1️⃣3️⃣ Aggressive Cows (Hard)</summary>
+🔹 Brute Force Approach
+
+Check all possible placements.
+
+Time Complexity: O(N²), Space Complexity: O(1)
+
+🔹 Optimal Approach (Binary Search + Two Pointer Idea)
+
+Use binary search on minimum distance between cows.
+
+Time Complexity: O(N log N), Space Complexity: O(1)
+
+</details>
