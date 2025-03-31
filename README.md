@@ -1131,3 +1131,74 @@ Use binary search on minimum distance between cows.
 Time Complexity: O(N log N), Space Complexity: O(1)
 
 </details>
+
+
+---
+
+## **📂 8. Prefix Sum**  
+---    
+
+<details>  
+<summary>1️⃣ Equilibrium Index (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Check each index and verify if the sum of elements before it equals the sum of elements after it.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Optimal Approach (Prefix Sum)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Precompute prefix sums. For each index `i`, check if `prefix[i-1] == totalSum - prefix[i]`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N) (or O(1) with running sum)  
+
+</details>  
+
+<details>  
+<summary>2️⃣ Product of Array Except Self (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• For each element, calculate the product of all other elements by iterating over the array.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Optimal Approach (Prefix & Suffix Products)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use two arrays to store prefix and suffix products, then compute results for each index.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N) (or O(1) modifying output array)  
+
+</details>  
+
+<details>  
+<summary>3️⃣ Longest Subarray with Equal Number of 0s and 1s (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Check all subarrays and count occurrences of `0s` and `1s`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Optimal Approach (Prefix Sum + HashMap)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Convert `0s` to `-1`, compute prefix sum, and store first occurrences in a hashmap.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>4️⃣ Longest Subarray with Sum K (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Check all subarrays and compute their sum.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Optimal Approach (Prefix Sum + HashMap / Two Pointers)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use prefix sum with a hashmap to store indices or two pointers for positive arrays.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>5️⃣ Subarray Sum Divisible by K (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Check all subarrays and compute their sum to check divisibility by `K`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Optimal Approach (Prefix Sum + Modulo HashMap)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use prefix sum modulo `K` and store first occurrences in a hashmap.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(K)  
+
+</details>  
