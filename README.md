@@ -1202,3 +1202,124 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 &nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(K)  
 
 </details>  
+
+
+---
+
+## **📂 9. Recursion**  
+---  
+
+<details>  
+<summary>1️⃣ Permutation of an Array/String (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Generate all possible arrangements using built-in functions or simple swaps.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N!) (factorial growth), **Space Complexity:** O(N) (for recursion stack)  
+
+&nbsp;&nbsp;🔹 **Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Swap elements and recursively generate permutations, backtracking after each step.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N!), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>2️⃣ Subsets – II (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Generate all subsets, then filter out duplicates using a set.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^N * N), **Space Complexity:** O(2^N)  
+
+&nbsp;&nbsp;🔹 **Optimized Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Sort the array and use recursion with an index-based approach to avoid duplicates.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^N), **Space Complexity:** O(N) (for recursion stack)  
+
+</details>  
+
+<details>  
+<summary>3️⃣ Combination Sum (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Generate all possible subsets and check if they sum to the target.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^N * N), **Space Complexity:** O(N)  
+
+&nbsp;&nbsp;🔹 **Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use recursion with a decision tree (include/exclude element).  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^N), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>4️⃣ Palindrome Partition (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Generate all partitions and check each for palindromes.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^N * N), **Space Complexity:** O(N)  
+
+&nbsp;&nbsp;🔹 **Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Recursively partition and check palindromes dynamically.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^N), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>5️⃣ Merge Sort (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Divide the array into two halves, recursively sort, and merge them.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>6️⃣ N Queen (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try placing queens in every cell and check constraints.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N^N), **Space Complexity:** O(N^2)  
+
+&nbsp;&nbsp;🔹 **Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Place a queen in each row and backtrack if a conflict arises.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N!), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>7️⃣ Sudoku Solver (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try placing digits in empty spots and backtrack when needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(9^(N²)), **Space Complexity:** O(N²)  
+
+</details>  
+
+<details>  
+<summary>8️⃣ Rat in a Maze (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Move in all possible directions and backtrack when needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(2^(N²)), **Space Complexity:** O(N²)  
+
+</details>  
+
+<details>  
+<summary>9️⃣ Count Inversions (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Brute Force Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count pairs where i < j and arr[i] > arr[j].  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Merge Sort Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count inversions while merging two halves.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>  
+
+<details>  
+<summary>🔟 Knight’s Tour (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Backtracking Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Move the knight to all valid positions recursively and backtrack if stuck.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(8^(N²)), **Space Complexity:** O(N²)  
+
+</details>  
+
