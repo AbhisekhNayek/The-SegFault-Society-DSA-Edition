@@ -1560,3 +1560,77 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 &nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
 
 </details>
+
+
+
+---
+
+## **📂 12. Queue**  
+---
+
+<details>  
+<summary>1️⃣ Implement Queue (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Array or Linked List**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Maintain `front` and `rear` pointers.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Support `enqueue`, `dequeue`, `peek`, `isEmpty`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) for all operations  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Implement Circular Queue (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Modulo-based Indexing**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use array of fixed size with circular indexing using `% size`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Track size, `front`, and `rear`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Prevent overflow with full/empty checks.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Implement Stack using Queue (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Two Queue Method**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Push in `q1`, and move all elements to `q2` during pop.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Alternatively, for optimized push, rotate `q1` each time after pushing.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) push, O(N) pop (or vice versa)  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>4️⃣ First Unique Character in a String (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Queue + Frequency Map**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count frequency of each character.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse string and push characters into queue.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Remove from queue until front is unique.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1) (only lowercase letters)  
+
+</details>
+
+<details>  
+<summary>5️⃣ K-sized Subarray Maximum (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Monotonic Deque Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use deque to store indices in decreasing order of values.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Remove elements out of window and smaller than current.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Front of deque gives max in window.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(K)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Longest Bounded-Difference Subarray (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Sliding Window + Monotonic Queues**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use two deques to track max and min in the window.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Shrink window if max - min exceeds limit.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Keep track of the longest valid window.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
