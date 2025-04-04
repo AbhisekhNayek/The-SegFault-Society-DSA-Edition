@@ -2273,3 +2273,112 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 &nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(E * α(V)), **Space Complexity:** O(V)  
 
 </details>
+
+
+
+
+---
+
+## **📂 18. Heap**  
+---
+
+<details>  
+<summary>1️⃣ K'th Missing Positive Number (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Binary Search or Linear Count**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count missing numbers at each index.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Binary search on index for efficiency.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Find K Pairs with Smallest Sums (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Min Heap of Pairs**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Push initial pairs into heap.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Pop k smallest and push next candidates.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(K log K), **Space Complexity:** O(K)  
+
+</details>
+
+<details>  
+<summary>3️⃣ K'th Smallest Element in a Sorted Matrix (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Min Heap + Binary Search**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Push first row elements into heap.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Extract min and insert next in row.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(K log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>4️⃣ K'th Largest Sum of Contiguous Subarray (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Prefix Sums + Min Heap**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Generate all subarray sums.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Maintain heap of size K.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N² log K), **Space Complexity:** O(K)  
+
+</details>
+
+<details>  
+<summary>5️⃣ K Closest Points to Origin (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Max Heap of Size K**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use distance squared to compare.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Keep heap of K closest points.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log K), **Space Complexity:** O(K)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Find K Closest Elements in Sorted Array (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Binary Search + Two Pointers**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Find insertion point of target.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Expand left/right to pick K elements.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log N + K), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Rearrange String K Distance Apart (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Max Heap + Queue**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Greedily pick highest freq char.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use queue to enforce K distance.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log K), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Find Median from Data Stream (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Max Heap + Min Heap**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Max heap for left half, min heap for right.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Balance heaps after each insert.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log N) per insert, **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>9️⃣ K'th Smallest Prime Fraction (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Min Heap of Fractions**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use heap to compare fractions a/b.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Push next possible fractions by column.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(K log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>🔟 Divide Array into K Sets of Consecutive Numbers (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Min Heap + Frequency Map**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count frequency, use min heap for order.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Check and reduce counts for k consecutive numbers.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
