@@ -2381,3 +2381,109 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 &nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
 </details>
 
+
+---
+
+## **📂 19. Tries**  
+---
+
+<details>  
+<summary>1️⃣ Implement Trie - I (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Basic Trie Structure**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Support `insert()` and `search()` methods.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use HashMap or array of 26 for children.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Implement Trie - II (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Add `startsWith()` to Basic Trie**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Check if any word in the trie starts with prefix.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Same structure, additional method.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Search Suggestions System (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Trie + DFS/MinHeap**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use trie to store products.  
+&nbsp;&nbsp;&nbsp;&nbsp;• DFS to collect suggestions after prefix match.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M·N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Longest Common Prefix Using Trie (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Insert All Strings into Trie**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse till only one child exists and no end-of-word.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Return built prefix.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N·M), **Space Complexity:** O(N·M)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Count Words in a Trie (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Add Word Count at End Nodes**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Add a counter at each node for inserted words.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Update count during insert.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Word Search II (Trie + Backtracking) (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Trie + DFS**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Build trie of words.  
+&nbsp;&nbsp;&nbsp;&nbsp;• DFS from each board cell checking valid paths in trie.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M·N·4^L), **Space Complexity:** O(W·L)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Maximum XOR of Two Numbers in an Array (Trie) (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Bitwise Trie**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Insert binary form of numbers into trie.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try to pick opposite bits for max XOR.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Replace Words (Using Dictionary Trie) (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Insert Dictionary Roots into Trie**  
+&nbsp;&nbsp;&nbsp;&nbsp;• For each word, check shortest root in trie.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Replace word with root if found.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N·M), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Design Search Autocomplete System (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Trie + Priority Queue + Frequency Map**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Track frequency of words.  
+&nbsp;&nbsp;&nbsp;&nbsp;• On input char, search trie and rank top matches.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(P log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>🔟 Concatenated Words (Trie + DFS) (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Insert Words into Trie, DFS to Build**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try splitting words into valid trie parts.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Avoid using the word itself during DFS.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N·L²), **Space Complexity:** O(N·L)  
+
+</details>
+
