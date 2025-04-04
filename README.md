@@ -1843,3 +1843,101 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 
 </details>
 
+
+
+---
+
+## **📂 14. Greedy Techniques**  
+---
+
+<details>  
+<summary>1️⃣ Assign Cookies (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Greedy Sort Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Sort both greed factor and cookie sizes.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Assign smallest sufficient cookie to each child.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Lemonade Change (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Track $5 and $10 Bills**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Greedily give change using higher denominations.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Return false if change can't be given.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Shortest Job First (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Sort by Job Duration**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Greedily pick the job with the least burst time.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Can use priority queue for dynamic insertion.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Jump Game I (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Track Farthest Reachable Index**  
+&nbsp;&nbsp;&nbsp;&nbsp;• At each index, update max reachable.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If index > maxReach, return false.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Jump Game II (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Greedy with Level Tracking**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Track jumps, current end, and farthest reach.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Increase jump when reaching current end.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Job Sequencing (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Sort by Profit, Greedy Slot Filling**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Sort jobs by profit descending.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try placing each job in the latest possible slot.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>7️⃣ N Meetings in One Room (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Sort by Meeting End Time**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Greedily select meetings that end earliest.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Track end time of last included meeting.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Non-overlapping Intervals (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Sort by End Time**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Greedily keep interval that ends earliest.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Remove overlapping intervals.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Merge Non-overlapping Intervals (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Sort & Merge Overlaps**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Sort intervals by start time.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Merge if current overlaps with previous.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
+
