@@ -68,10 +68,10 @@ Each category includes:
 14. **Greedy Algorithms**
 15. **Bit Manipulation**
 16. **Trees**
-17. **Tries**
-18. **Heaps**
-19. **Graphs**
-20. **System Design (Bonus)**
+17. **Graphs**
+18. **Heap**
+19. **Tries**
+20. **Fenwick Tree**
 
 ---
 
@@ -2484,6 +2484,113 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 &nbsp;&nbsp;&nbsp;&nbsp;• Try splitting words into valid trie parts.  
 &nbsp;&nbsp;&nbsp;&nbsp;• Avoid using the word itself during DFS.  
 &nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N·L²), **Space Complexity:** O(N·L)  
+
+</details>
+
+
+
+---
+
+## **📂 20. Segment Tree & Fenwick Tree**  
+---
+
+<details>  
+<summary>1️⃣ Range Sum Query (Immutable) - Easy</summary>  
+
+&nbsp;&nbsp;🔹 **Prefix Sum Array**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Precompute cumulative sums.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Return difference of prefix sums.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Range Sum Query (Mutable) - Medium</summary>  
+
+&nbsp;&nbsp;🔹 **Fenwick Tree / Segment Tree**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Efficient update and query on range sums.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use Fenwick Tree or Segment Tree.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Range Minimum Query - Medium</summary>  
+
+&nbsp;&nbsp;🔹 **Segment Tree for RMQ**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Build tree for minimum values.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Query and update efficiently.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Inversion Count Using BIT - Medium</summary>  
+
+&nbsp;&nbsp;🔹 **Count Elements Greater on Left**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use BIT to count how many elements are greater to the left.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Coordinate compression might be needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Count of Smaller Numbers After Self - Hard</summary>  
+
+&nbsp;&nbsp;🔹 **Use BIT or Segment Tree**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse from right to left.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use tree to maintain frequency count.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>6️⃣ K-th Smallest Number After Updates - Hard</summary>  
+
+&nbsp;&nbsp;🔹 **Segment Tree with Order Statistics**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Maintain frequency tree.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Binary search with prefix sums.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log² N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Range Sum of Sorted Subarray Sums - Hard</summary>  
+
+&nbsp;&nbsp;🔹 **Fenwick Tree + Sorting**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Compute all subarray sums, sort and prefix sum.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Efficient retrieval using BIT.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N² log N), **Space Complexity:** O(N²)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Number of Range Sum - Hard</summary>  
+
+&nbsp;&nbsp;🔹 **Segment Tree / Binary Indexed Tree + Prefix Sums**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count prefix sums in given range using BIT.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Coordinate compression needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Dynamic Range Sum Queries - Medium</summary>  
+
+&nbsp;&nbsp;🔹 **Segment Tree / Fenwick Tree**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Support range update and point query.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Lazy propagation if necessary.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>🔟 2D Range Sum Query - Medium</summary>  
+
+&nbsp;&nbsp;🔹 **2D Binary Indexed Tree**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Extend BIT to 2D grid.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Each update/query involves log² N time.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(log² N), **Space Complexity:** O(N²)  
 
 </details>
 
