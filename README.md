@@ -1634,3 +1634,212 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 
 </details>
 
+
+---
+
+## **📂 13. Dynamic Programming (DP)**  
+---
+
+<details>  
+<summary>1️⃣ Frog Jump (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive + Memoization**  
+&nbsp;&nbsp;&nbsp;&nbsp;• From stone `i`, jump to `i+1` or `i+2` with energy cost.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Memoize to avoid recomputation.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>2️⃣ House Robber (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP on Array**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Choose to rob current or skip and take max of previous decisions.  
+&nbsp;&nbsp;&nbsp;&nbsp;• `dp[i] = max(dp[i-1], dp[i-2] + nums[i])`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Ninjas Training (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP on Day × Last Task**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Cannot repeat same task on consecutive days.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try all tasks except last one and memoize.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N × 4 × 3), **Space Complexity:** O(N × 4)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Grid Unique Paths (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP from Destination**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Each cell can be reached from top or left.  
+&nbsp;&nbsp;&nbsp;&nbsp;• `dp[i][j] = dp[i-1][j] + dp[i][j-1]`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Minimum Path Sum in Grid (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP with Cost**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Add current cell value to min of top/left.  
+&nbsp;&nbsp;&nbsp;&nbsp;• `dp[i][j] = grid[i][j] + min(dp[i-1][j], dp[i][j-1])`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Maximum Path Sum in Matrix (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Bottom-Up DP**  
+&nbsp;&nbsp;&nbsp;&nbsp;• From cell `(i, j)`, move to `(i+1, j±1)` or `(i+1, j)`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Keep max path sum at each cell.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N²), **Space Complexity:** O(N²)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Subset Sum Equals to K (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Classic DP Problem**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use `dp[i][target]` to check if target can be formed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Either pick or not pick the element.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×K), **Space Complexity:** O(N×K)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Equal Partition (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Use Subset Sum**  
+&nbsp;&nbsp;&nbsp;&nbsp;• If sum is odd, return false.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Else check if `sum/2` subset exists using DP.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×Sum), **Space Complexity:** O(N×Sum)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Buy & Sell Stock (Max K Transactions) (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **3D DP: day, transaction, holding**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Memoize decision to buy/sell/skip.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×K×2), **Space Complexity:** O(N×K×2)  
+
+</details>
+
+<details>  
+<summary>🔟 0/1 Knapsack (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Pick or Skip Item**  
+&nbsp;&nbsp;&nbsp;&nbsp;• If `wt[i] <= W`, then `dp[i][W] = max(val[i] + dp[i-1][W-wt[i]], dp[i-1][W])`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×W), **Space Complexity:** O(N×W)  
+
+</details>
+
+<details>  
+<summary>1️⃣1️⃣ Coin Change 2 (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Unbounded Knapsack Style**  
+&nbsp;&nbsp;&nbsp;&nbsp;• `dp[i][target] = dp[i-1][target] + dp[i][target - coin[i]]`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×Amount), **Space Complexity:** O(N×Amount)  
+
+</details>
+
+<details>  
+<summary>1️⃣2️⃣ Rod Cutting (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Unbounded Knapsack**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Choose to cut or skip each length.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Maximize total value.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×L), **Space Complexity:** O(N×L)  
+
+</details>
+
+<details>  
+<summary>1️⃣3️⃣ Longest Common Subsequence (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Classic DP**  
+&nbsp;&nbsp;&nbsp;&nbsp;• If characters match: `1 + dp[i-1][j-1]`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Else: `max(dp[i-1][j], dp[i][j-1])`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>1️⃣4️⃣ Shortest Common Supersequence (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Using LCS**  
+&nbsp;&nbsp;&nbsp;&nbsp;• `Length = m + n - LCS`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Build the sequence by merging both strings using LCS info.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>1️⃣5️⃣ Distinct Subsequences (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **2D DP Table**  
+&nbsp;&nbsp;&nbsp;&nbsp;• If chars match: `dp[i][j] = dp[i-1][j-1] + dp[i-1][j]`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Else: `dp[i][j] = dp[i-1][j]`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>1️⃣6️⃣ Minimum Edit Distance (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP Table for Operations**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Convert string A to B using insert, delete, or replace.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>1️⃣7️⃣ Wildcard Pattern Matching (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP with Star Handling**  
+&nbsp;&nbsp;&nbsp;&nbsp;• `*` matches zero/more, `?` matches one char.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Recursive with memoization or tabulation.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(M×N), **Space Complexity:** O(M×N)  
+
+</details>
+
+<details>  
+<summary>1️⃣8️⃣ Buy & Sell Stock – I (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Single Pass**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Track min price and max profit on the go.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>1️⃣9️⃣ Buy & Sell Stock – II (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Multiple Transactions Allowed**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Buy low, sell high greedily when profit is positive.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>2️⃣0️⃣ Buy & Sell Stock – III (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **DP with At Most 2 Transactions**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use states for day, transactions left, and holding or not.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N×K), **Space Complexity:** O(N×K)  
+
+</details>
+
+<details>  
+<summary>2️⃣1️⃣ Matrix Chain Multiplication (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Parenthesization DP**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Try all partitions to minimize total multiplications.  
+&nbsp;&nbsp;&nbsp;&nbsp;• `dp[i][j] = min(dp[i][k] + dp[k+1][j] + cost)`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N³), **Space Complexity:** O(N²)  
+
+</details>
+
