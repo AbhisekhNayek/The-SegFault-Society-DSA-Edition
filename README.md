@@ -2379,6 +2379,5 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 &nbsp;&nbsp;&nbsp;&nbsp;• Count frequency, use min heap for order.  
 &nbsp;&nbsp;&nbsp;&nbsp;• Check and reduce counts for k consecutive numbers.  
 &nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N log N), **Space Complexity:** O(N)  
-
 </details>
 
