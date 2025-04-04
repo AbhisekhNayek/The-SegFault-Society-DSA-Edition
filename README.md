@@ -2163,3 +2163,113 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 
 </details>
 
+
+
+---
+
+## **📂 17. Graph**  
+---
+
+<details>  
+<summary>1️⃣ Graph Representation (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Adjacency List**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use a vector of lists/maps.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Good for sparse graphs.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) for add edge, **Space:** O(V + E)  
+
+&nbsp;&nbsp;🔹 **Adjacency Matrix**  
+&nbsp;&nbsp;&nbsp;&nbsp;• 2D array `adj[V][V]`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Good for dense graphs.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) access, **Space:** O(V²)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Breadth-First Search (BFS) (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Queue**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Explore level by level.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use visited array to prevent cycles.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Depth-First Search (DFS) (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive or Stack**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Explore depth before breadth.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Mark nodes visited.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Detect Cycle in Undirected Graph (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using DFS with Parent Check**  
+&nbsp;&nbsp;&nbsp;&nbsp;• If a visited node is not parent, cycle exists.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Detect Cycle in Directed Graph (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **DFS + Recursion Stack**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use visited and recursion stack.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Cycle exists if node is revisited in current stack.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Topological Sort (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using DFS or Kahn’s Algo**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Only for Directed Acyclic Graphs (DAGs).  
+&nbsp;&nbsp;&nbsp;&nbsp;• Kahn’s: Use indegree and queue.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Number of Connected Components (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **DFS or BFS on All Nodes**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count how many DFS/BFS calls needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Unvisited node means new component.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Bipartite Graph Check (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **BFS with Coloring**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Color neighbors opposite.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If conflict, it's not bipartite.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(V + E), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Dijkstra’s Algorithm (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Priority Queue + Distance Array**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Greedily pick the shortest path node.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Works with non-negative weights.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O((V + E) log V), **Space Complexity:** O(V)  
+
+</details>
+
+<details>  
+<summary>🔟 Detect Cycle Using Union-Find (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Disjoint Set Union (DSU)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• For undirected graphs.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If u and v have same parent → cycle.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(E * α(V)), **Space Complexity:** O(V)  
+
+</details>
