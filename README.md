@@ -2046,3 +2046,120 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 </details>
 
 
+
+---
+
+## **📂 16. Tree**  
+---
+
+<details>  
+<summary>1️⃣ Inorder Traversal (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse Left → Node → Right.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Base case: null node.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Preorder Traversal (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse Node → Left → Right.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use for cloning or copying trees.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Postorder Traversal (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse Left → Right → Node.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Useful in deleting trees.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Level Order Traversal (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Queue**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse level by level using BFS.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Enqueue children of each node.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>5️⃣ In, Pre, Post Traversal Using Stack (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Iterative Traversals**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Simulate recursion using explicit stack.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Preorder: process node before children.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Postorder: process node after both children.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Maximum Depth of Binary Tree (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **DFS Recursion**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Depth = 1 + max(leftDepth, rightDepth)  
+&nbsp;&nbsp;&nbsp;&nbsp;• Base case: null → 0  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Check for Balanced Binary Tree (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Postorder Check with Height**  
+&nbsp;&nbsp;&nbsp;&nbsp;• For each node, check height diff ≤ 1  
+&nbsp;&nbsp;&nbsp;&nbsp;• Return -1 if unbalanced  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Diameter of Binary Tree (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Max Path Through Any Node**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Diameter = max(leftHeight + rightHeight)  
+&nbsp;&nbsp;&nbsp;&nbsp;• Track max at each recursion.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Maximum Path Sum (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Postorder DFS + Global Max**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Calculate max gain from left/right subtrees.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Update global max with left + node + right.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>🔟 Check If Two Trees Are Identical (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Compare**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Base case: both null → true  
+&nbsp;&nbsp;&nbsp;&nbsp;• Compare node values and children recursively  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(H)  
+
+</details>
+
+<details>  
+<summary>1️⃣1️⃣ Spiral Traversal of Tree (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Zigzag Level Order**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use two stacks or deque  
+&nbsp;&nbsp;&nbsp;&nbsp;• Alternate direction each level  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
