@@ -1323,3 +1323,160 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 
 </details>  
 
+
+
+---
+
+## **📂 10. Linked List**  
+---
+
+<details>  
+<summary>1️⃣ Reverse a Linked List (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Iterative Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use three pointers: `prev`, `curr`, and `next`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Reverse the `next` pointer of each node to point to the previous node.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Recursively reverse the rest of the list, then fix the current node's pointer.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Detect Cycle in Linked List (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Floyd’s Cycle Detection Algorithm (Tortoise and Hare)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use two pointers: slow and fast.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Move slow by one step and fast by two steps.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If they meet, there is a cycle.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Using Hashing (Set)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Store visited nodes in a set.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If a node is revisited, a cycle exists.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Find the First Node of Loop in Linked List (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Floyd’s Algorithm Extension**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Detect cycle using slow and fast pointers.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Once they meet, place one pointer at head and move both one step at a time.  
+&nbsp;&nbsp;&nbsp;&nbsp;• The node where they meet again is the start of the loop.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Remove Cycle from a Linked List (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Floyd’s + Loop Removal**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Detect cycle using Floyd’s method.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Find the start of the loop.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse to the node just before loop start and set its `next` to `NULL`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Merge Two Sorted Linked Lists (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Iterative Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use a dummy node and merge nodes in order.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Point the dummy’s next to the merged result.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N + M), **Space Complexity:** O(1)  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Recursively choose the smaller head node and build the result.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N + M), **Space Complexity:** O(N + M)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Find Middle of a Linked List (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Two Pointer Technique**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use slow and fast pointers.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Move slow by 1 step and fast by 2 steps.  
+&nbsp;&nbsp;&nbsp;&nbsp;• When fast reaches the end, slow will be at the middle.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Flatten Linked List (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Merge**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Each node has a `next` and `bottom` pointer.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Recursively flatten the list starting from the rightmost list.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Merge current list with the flattened next list.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Clone List with Next and Random Pointer (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Optimized Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Insert clone nodes in between original nodes.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Set correct random pointers for clones.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Separate the clone list from original.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Reverse Nodes in K-Groups (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Group Reversal**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Reverse first k nodes, then recursively call for next k nodes.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Connect reversed groups.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N/k)  
+
+&nbsp;&nbsp;🔹 **Iterative Version (Harder to Implement)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use loop to reverse k nodes at a time.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Manage connections between reversed segments.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>🔟 LRU Cache (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Doubly Linked List + HashMap**  
+&nbsp;&nbsp;&nbsp;&nbsp;• HashMap for O(1) access, Doubly Linked List for O(1) updates.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Maintain recently used items at the front.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Evict least recently used item when capacity is reached.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) for get/put, **Space Complexity:** O(capacity)  
+
+</details>
+
+<details>  
+<summary>1️⃣1️⃣ Add Numbers in Linked List (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Like Adding Two Numbers Digit-by-Digit**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse both lists, add corresponding digits with carry.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Create new nodes for the sum.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Handle final carry.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>1️⃣2️⃣ Swap Nodes in Pairs (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Recursive Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Swap first two nodes, then recursively swap remaining list.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+&nbsp;&nbsp;🔹 **Iterative Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use dummy node and loop to swap pairs.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Update pointers accordingly.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
