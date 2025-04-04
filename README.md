@@ -4,7 +4,7 @@
 ## **📖 Introduction**  
 👋 Hi, I'm **Abhisekh Nayek!**  
 
-I come from a farmer's family, and I’ve always been passionate about technology. Despite my background, I worked my way up to becoming a **Software Engineer at Jobcode**. My journey has been full of challenges, but through **consistency, problem-solving, and a love for coding**, I’ve managed to grow my skills and help others do the same.  
+I’ve always been passionate about technology. Despite my background, I worked my way up to becoming a **Software Engineer at Jobcode**. My journey has been full of challenges, but through **consistency, problem-solving, and a love for coding**, I’ve managed to grow my skills and help others do the same.  
 
 This repository is my way of **giving back**—helping fellow programmers crack **DSA rounds** with a **structured and practical** approach.  
 
