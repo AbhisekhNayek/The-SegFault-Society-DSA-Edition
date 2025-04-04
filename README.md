@@ -1941,3 +1941,108 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 </details>
 
 
+---
+
+## **📂 15. Bit Manipulation**  
+---
+
+<details>  
+<summary>1️⃣ Swap Two Numbers (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Using XOR**  
+&nbsp;&nbsp;&nbsp;&nbsp;• `a = a ^ b`, `b = a ^ b`, `a = a ^ b`  
+&nbsp;&nbsp;&nbsp;&nbsp;• No temporary variable needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Check if i-th Bit is Set (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Bitwise AND**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use `(n & (1 << i)) != 0`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Returns true if i-th bit is 1.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Set i-th Bit (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Bitwise OR**  
+&nbsp;&nbsp;&nbsp;&nbsp;• `n | (1 << i)` sets the i-th bit to 1.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Leaves all other bits unchanged.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Remove i-th Bit (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Bitwise AND with NOT**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use `n & ~(1 << i)`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Clears the i-th bit.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Toggle i-th Bit (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Bitwise XOR**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use `n ^ (1 << i)` to flip the i-th bit.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If 1 becomes 0, and vice versa.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Remove Last Set Bit (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Use n & (n - 1)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Clears the lowest set bit.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Example: `12 (1100) → 8 (1000)`  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Count Number of Set Bits (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Brian Kernighan’s Algo**  
+&nbsp;&nbsp;&nbsp;&nbsp;• While `n != 0`, do `n = n & (n - 1)` and count iterations.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(# of set bits), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>8️⃣ Power of 2 or Not (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Check Single Set Bit**  
+&nbsp;&nbsp;&nbsp;&nbsp;• `n > 0` and `n & (n - 1) == 0`  
+&nbsp;&nbsp;&nbsp;&nbsp;• Only powers of 2 have one bit set.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>9️⃣ Single Number I (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using XOR**  
+&nbsp;&nbsp;&nbsp;&nbsp;• XOR of all elements gives the unique one.  
+&nbsp;&nbsp;&nbsp;&nbsp;• All pairs cancel out.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(1)  
+
+</details>
+
+<details>  
+<summary>🔟 Single Number II (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Bit Counting by Position**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Count 1s at each bit position.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Take modulo 3 to isolate the unique number.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(32N), **Space Complexity:** O(1)  
+
+</details>
+
+
