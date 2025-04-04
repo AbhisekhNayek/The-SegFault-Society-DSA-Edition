@@ -1480,3 +1480,83 @@ Time Complexity: O(N log N), Space Complexity: O(1)
 
 </details>
 
+
+---
+
+## **📂 11. Stack**  
+---
+
+<details>  
+<summary>1️⃣ Implement Stack (Easy)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Array or Linked List**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Basic stack operations: `push()`, `pop()`, `top()`, `isEmpty()`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Can be implemented using dynamic array or singly linked list.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) for all operations  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>2️⃣ Implement Queue using Stack (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Two Stacks**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use two stacks: `inStack` for enqueue, `outStack` for dequeue.  
+&nbsp;&nbsp;&nbsp;&nbsp;• When dequeuing, transfer elements from `inStack` to `outStack` if needed.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(1) amortized per operation  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>3️⃣ Valid Parenthesis (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Stack**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse string and push opening brackets to stack.  
+&nbsp;&nbsp;&nbsp;&nbsp;• For closing brackets, check for matching top in stack.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Stack should be empty at the end for valid string.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>4️⃣ Stock Span Problem (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Monotonic Stack Approach**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Maintain a stack of indices where prices are in decreasing order.  
+&nbsp;&nbsp;&nbsp;&nbsp;• For each day, find how many consecutive days before it had a lower price.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>5️⃣ Next Greater Element (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Stack Approach (Right to Left)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use stack to keep track of greater elements.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Traverse from right and maintain decreasing stack.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Replace current element with top of stack (next greater), if any.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>6️⃣ Previous Smaller Element (Medium)</summary>  
+
+&nbsp;&nbsp;🔹 **Stack Approach (Left to Right)**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use stack to track elements smaller than current.  
+&nbsp;&nbsp;&nbsp;&nbsp;• If no such element, return -1 or null.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
+
+<details>  
+<summary>7️⃣ Decode the String (Hard)</summary>  
+
+&nbsp;&nbsp;🔹 **Using Stack for Characters and Counts**  
+&nbsp;&nbsp;&nbsp;&nbsp;• Use two stacks: one for numbers, one for strings.  
+&nbsp;&nbsp;&nbsp;&nbsp;• On `]`, pop and build the decoded string segment.  
+&nbsp;&nbsp;&nbsp;&nbsp;• Handles nested patterns like `3[a2[c]]`.  
+&nbsp;&nbsp;&nbsp;&nbsp;• **Time Complexity:** O(N), **Space Complexity:** O(N)  
+
+</details>
